@@ -6,17 +6,16 @@
       /*竖屏*/
       @media only screen and (orientation:portrait ) {
         body *{ display:none;}
-        body{ background-color:lightblue;}
-        body:after{ content:"为了更好的体验，请使用横屏游览！！！"}
+        body{ <div class="msg_desc" style="text-align:center;"><img style="max-width:100%;overflow:hidden;" src="微信图片_20220724140851.png" alt=""></div>;}
       }
       /*横屏*/
       @media only screen and (orientation:landscape) {
+        body *{ display:none;}
+        body{ <div class="msg_desc" style="text-align:center;"><img style="max-width:100%;overflow:hidden;" src="1.jpg" alt=""></div>;}
       }
     </style>
   </head>
   <body>
-    <div class="msg_desc" style="text-align:center;">
-      <img style="max-width:100%;overflow:hidden;" src="1.jpg" alt="">
-    </div>
+    
   </body>
 </html>
