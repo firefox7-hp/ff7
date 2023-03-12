@@ -1,22 +1,46 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       /*竖屏*/
       @media only screen and (orientation:portrait ) {
-        <div class="msg_desc"> 
-          <img style="max-width:100%;overflow:hidden;" src="微信图片_20220724140851.png" alt=""> 
-        </div> 
+        .index{
+          width: 100%;
+          height: 100vh;
+        }
+        .top{
+          background-position: center;
+          background-repeat:no-repeat; 
+          background-size:cover;
+          -moz-background-size:100% 100%;
+          display: flex;
+          flex-direction: column;
+          background-image: url(微信图片_20220724140851.png);
+        }
       }
       /*横屏*/
       @media only screen and (orientation:landscape) {
-        <div class="msg_desc"> 
-          <img style="max-width:100%;overflow:hidden;" src="1.jpg" alt=""> 
-        </div> 
+        .index{
+          width: 100%;
+          height: 100vh;
+        }
+        .top{
+          background-position: center;
+          background-repeat:no-repeat; 
+          background-size:cover;
+          -moz-background-size:100% 100%;
+          display: flex;
+          flex-direction: column;
+          background-image: url(1.jpg);
+        }
       }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <view class="index">
+      <view class="top">
+      </view>
+    </view>
   </body>
 </html>
